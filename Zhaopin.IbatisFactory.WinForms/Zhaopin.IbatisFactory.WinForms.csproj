@@ -85,11 +85,21 @@
     <None Include="Template\vssver2.scc" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Template\Access.htm" />
-    <Content Include="Template\DataModel.htm" />
-    <Content Include="Template\folder.xml" />
-    <Content Include="Template\list.htm" />
-    <Content Include="Template\map.xml" />
+    <EmbeddedResource Include="Template\Access.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\DataModel.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\folder.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\list.htm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\map.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Content Include="Template\read.txt" />
   </ItemGroup>
   <ItemGroup>

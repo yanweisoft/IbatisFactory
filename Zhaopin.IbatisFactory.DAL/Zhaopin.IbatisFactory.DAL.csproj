@@ -40,7 +40,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ContentFormClassDAL.cs" />
+    <Compile Include="MainClassDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zhaopin.DataAccess\Zhaopin.DataAccess.csproj">
+      <Project>{1a188cd7-dcc2-49ea-b7a6-7498f7f08ede}</Project>
+      <Name>Zhaopin.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zhaopin.IbatisFactory.Common\Zhaopin.IbatisFactory.Common.csproj">
+      <Project>{0743d085-f30c-4a0e-a363-665edf599981}</Project>
+      <Name>Zhaopin.IbatisFactory.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

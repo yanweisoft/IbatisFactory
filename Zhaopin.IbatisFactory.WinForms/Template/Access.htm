@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using IBatisNet.DataMapper;
+using $namespace$.DataAccess.Models.$tablename$;
+
+namespace $namespace$.DataAccess.$tablename$
+{
+    public class $tablename$DataAccess
+    {
+        public void Insert($tablename$DataModel $tablename2$)
+        {
+            object oo = Mapper.Instance().Insert("$tablename$Insert", $tablename2$);
+        }
+        public $tablename$DataModel GetModel(int Id)
+        {
+            $tablename$DataModel model = new $tablename$DataModel();
+            model = Mapper.Instance().QueryForObject("$tablename$SelectModel", Id) as $tablename$DataModel;
+            return model;
+        }
+
+        public void Update($tablename$DataModel $tablename2$)
+        {
+             
+            try
+            {
+                Mapper.Instance().BeginTransaction();
+                Mapper.Instance().Update("$tablename$Update", $tablename2$); 
+                Mapper.Instance().CommitTransaction(); 
+            }
+            catch  
+            { 
+                Mapper.Instance().RollBackTransaction();
+            } 
+        }  
+ 
+    }
+}

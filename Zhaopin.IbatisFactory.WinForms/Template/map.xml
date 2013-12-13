@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="$tablename$" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <alias>
+    <typeAlias alias="$tablename$" Type="$namespace$.$tablename$Model, $namespace$.DataAccess"  />
+  </alias>
+  <statements>
+    <insert id="$tablename$Insert" parameterClass="$tablename$" resultClass="$tablename$">
+      INSERT INTO [$tablename$]
+      ($colunms1$)
+      VALUES
+      ($colunms2$)
+    </insert>
+
+    <select id="$tablename$SelectModel" parameterClass="$tablename$" resultClass="$tablename$">
+      select $colunms1$  from  [$tablename$]  where Id =#Id#
+    </select>
+
+    <update id ="$tablename$Update" parameterClass="$tablename$">
+      update [$tablename$] set $colunms3$ where [Id] =#Id#;
+    </update>
+
+  </statements>
+
+</sqlMap>

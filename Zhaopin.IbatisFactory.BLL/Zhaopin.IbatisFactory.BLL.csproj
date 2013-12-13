@@ -40,7 +40,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ContentFromClassBLL.cs" />
+    <Compile Include="MainClassBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zhaopin.IbatisFactory.Common\Zhaopin.IbatisFactory.Common.csproj">
+      <Project>{0743d085-f30c-4a0e-a363-665edf599981}</Project>
+      <Name>Zhaopin.IbatisFactory.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Zhaopin.IbatisFactory.DAL\Zhaopin.IbatisFactory.DAL.csproj">
+      <Project>{621e5d03-383d-4d24-9022-fb3998b6a592}</Project>
+      <Name>Zhaopin.IbatisFactory.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

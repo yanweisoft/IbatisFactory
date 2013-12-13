@@ -1,0 +1,7 @@
+﻿$tablename$  表名称
+$colunms1$   字段列 col1,col2
+$colunms2$   字段列 #col1#,#col2#
+$colunms3$   字段列 [col1]=#col1#,[col2]=#col2#
+$namespace$  命名空间
+$tablename2$ 表名称小写
+ 

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<folders>
+  <Item Code="1" Name="DataAccess" Path="\Template\Access.htm" NewPath="DataAccess\{0}DataAccess.cs" ItemTemplate=""></Item>
+  <Item Code="2" Name="Maps\SqlClient" Path="\Template\map.xml" NewPath="Maps\SqlClient\{0}.xml" ItemTemplate=""></Item>
+  <Item Code="3" Name="Models" Path="\Template\DataModel.htm" NewPath="Models\{0}Model.cs" ItemTemplate="\Template\list.htm"></Item>
+</folders>

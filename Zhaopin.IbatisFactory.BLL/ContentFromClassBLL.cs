@@ -18,7 +18,7 @@ namespace Zhaopin.IbatisFactory.BLL
         /// <returns></returns>
         public DataSet GetTables(string ConnectionString)
         {
-            return dal.GetTables(ConnectionString); 
+            return dal.GetTables(ConnectionString);  
         }
 
         public FolderClass GetList()

@@ -21,7 +21,7 @@ namespace Zhaopin.IbatisFactory.Common
         /// <returns></returns>
         public static object Deserialize(Type type, string filename)
         {
-            FileStream fs = null;
+            FileStream fs = null; 
             try
             {
                 // open the stream

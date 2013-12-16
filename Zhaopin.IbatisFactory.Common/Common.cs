@@ -15,7 +15,7 @@ namespace Zhaopin.IbatisFactory.Common
                 switch (sqltype)
                 {
                     case "int":
-                        result = "Int";
+                        result = "int";
                         break;
                     case "datetime":
                         result = "DateTime";

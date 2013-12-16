@@ -6,10 +6,13 @@ using Zhaopin.IbatisFactory.DAL;
 using System.Data;
 namespace Zhaopin.IbatisFactory.BLL
 {
+    /// <summary>
+    /// 主窗体构造类
+    /// </summary>
     public class MainClassBLL
     {
-        MainClassDAL dal = new MainClassDAL();  
-        public DataSet  LoadDataBase(string server, string uid, string pwd)
+        MainClassDAL dal = new MainClassDAL();
+        public DataSet LoadDataBase(string server, string uid, string pwd)
         {
             string strConnection = string.Format("Data Source={0};Initial Catalog=master;User ID={1};PWD={2}", server, uid, pwd);
             return dal.LoadDataBase(strConnection);
